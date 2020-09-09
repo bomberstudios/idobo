@@ -15,7 +15,7 @@
 // Layers
 #define L_COL TG(_COLEMAK)
 #define L_NUM LT(_NUMBER,KC_E)
-#define L_SYM MO(_SYMBOL)
+#define L_SYM LT(_SYMBOL,KC_ENT)
 #define L_MOM MO(_MOVE)
 
 // macOS Shortcuts
@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,_______,KC_BTN1,KC_MS_U,KC_BTN2,_______,_______,_______,_______,_______,START,  KC_UP,  END,    KC__VOLUP,_______,
     _______,_______,KC_MS_L,KC_MS_D,KC_MS_R,_______,_______,_______,_______,_______,KC_LEFT,KC_DOWN,KC_RGHT,TD_IOS, _______,
     _______,Ctrl,   Alt,    Cmd,    Shift,  _______,_______,_______,_______,_______,SHT_SCR,SHT_ARE,SHT_OPT,KC__VOLDOWN,_______,
-    _______,_______,L_COL,  _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
+    _______,_______,_______,L_COL,  _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
   ),
   [_MOVE_LEFT] = LAYOUT_ortho_5x15(
     _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,

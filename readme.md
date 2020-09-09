@@ -14,6 +14,7 @@ I'm interested in minimal layouts, ergonomics, and reducing hand gymnastics. So 
 ### 2020-09-09
 - Enable dynamic macros, to record login information
 - Added `e` on left thumb (on a mod tap with the Number layer). I've removed the form the top layer, otherwise I'll never get used to it...
+- Added enter on tap on middle right thumb
 
 ### 2020-09-08
 - enabled VIA again, to play with some switches in the middle of the keyboard -> turns out that's a stupid idea, since VIA only supports 4 layers...
