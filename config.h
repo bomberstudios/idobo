@@ -25,6 +25,6 @@
 // #define LEADER_PER_KEY_TIMING
 
 // Adding LT to the backspace key results in half the deletes I do failing because I don't release it fast enough. This should fix it...
-#define RETRO_TAPPING
+//#define RETRO_TAPPING
 
-#define TAPPING_TERM 250
+#define TAPPING_TERM 200

@@ -7,7 +7,7 @@
 
 // Layers
 #define L_COL TG(_COLEMAK)
-#define L_NUM LT(_NUMBER,KC_E)
+#define L_NUM MO(_NUMBER)
 #define L_SYM LT(_SYMBOL,KC_ENT)
 #define L_MOM MO(_MOVE)
 
