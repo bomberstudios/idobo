@@ -81,13 +81,13 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 // Combos
 enum combos {
   AS_ESC,
-  JK_TAB
+  QW_TAB
 };
 
-const uint16_t PROGMEM as_combo[] = {KC_A, KC_S, COMBO_END};
-const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM as_combo[] = {CTL_A, ALT_S, COMBO_END};
+const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
   [AS_ESC] = COMBO(as_combo, KC_ESC),
-  [JK_TAB] = COMBO(jk_combo, KC_TAB)
+  [QW_TAB] = COMBO(qw_combo, KC_TAB)
 };

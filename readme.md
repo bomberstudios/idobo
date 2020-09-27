@@ -14,6 +14,7 @@ I'm interested in minimal layouts, ergonomics, and reducing hand gymnastics. So 
 ### 2020-09-27
 
 - Added a few shortcuts for daily tools
+- Added a couple of proof of concept combos, to see how they feel in preparation for the 3x5 Corne
 
 ### 2020-09-26
 
