@@ -9,10 +9,10 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_ortho_5x15(
     XXXXXXX,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   XXXXXXX,XXXXXXX,XXXXXXX,KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   XXXXXXX,
-    TD_ESC, KC_Q,   KC_W,   _______,KC_R,   KC_T,   XXXXXXX,XXXXXXX,XXXXXXX,KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_BSPC,
+    TD_ESC, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   XXXXXXX,XXXXXXX,XXXXXXX,KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_BSPC,
     KC_TAB, CTL_A,  ALT_S,  CMD_D,  SHT_F,  KC_G,   KC_7,   KC_8,   KC_9,   KC_H,   SHT_J,  CMD_K,  ALT_L,  CTL_CLN,KC_QUOT,
     TD_IOS, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_4,   KC_5,   KC_6,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_ENT,
-    _______,_______,_______,_______,L_NUM,  KC_BSPC,KC_1,   KC_2,   KC_3,   SPC_3,  L_SYM,  KC_ENT, _______,_______,_______
+    _______,_______,_______,L_UC,   L_NUM,  KC_BSPC,KC_1,   KC_2,   KC_3,   SPC_3,  L_SYM,  KC_ENT, _______,_______,_______
   ),
   [_NUMBER] = LAYOUT_ortho_5x15(
     _______,KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  _______,_______,_______,KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, _______,
@@ -30,16 +30,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_MOVE] = LAYOUT_ortho_5x15(
     RESET,  DM_REC1,DM_REC2,DM_PLY1,DM_PLY2,DM_RSTP,_______,_______,_______,_______,_______,_______,KC_WAKE,KC_POWER,KC_SLEP,
-    _______,_______,KC_BTN1,KC_MS_U,KC_BTN2,_______,_______,_______,_______,_______,START,  KC_UP,  END,    KC__VOLUP,_______,
-    _______,_______,KC_MS_L,KC_MS_D,KC_MS_R,_______,_______,_______,_______,_______,KC_LEFT,KC_DOWN,KC_RGHT,TD_IOS, _______,
-    _______,Ctrl,   Alt,    Cmd,    Shift,  _______,_______,_______,_______,_______,SHT_SCR,SHT_ARE,SHT_OPT,KC__VOLDOWN,_______,
+    _______,_______,_______,_______,_______,LINEDEL,_______,_______,_______,LINEUP, START,  KC_UP,  END,    ZOOM_IN,_______,
+    _______,Ctrl,   Alt,    Cmd,    Shift,  LINEDUP,_______,_______,_______,LINEDWN,KC_LEFT,KC_DOWN,KC_RGHT,TD_IOS, _______,
+    _______,Ctrl,   Alt,    Cmd,    Shift,  RUNSCRIPT,_______,_______,_______,RUNAGAIN,SHT_SCR,SHT_ARE,SHT_OPT,ZOOM_OUT,_______,
     _______,_______,_______,L_COL,  _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
   ),
+  // [_MOVE] = LAYOUT_ortho_5x15(
+  //   RESET,  DM_REC1,DM_REC2,DM_PLY1,DM_PLY2,DM_RSTP,_______,_______,_______,_______,_______,_______,KC_WAKE,KC_POWER,KC_SLEP,
+  //   _______,_______,KC_BTN1,KC_MS_U,KC_BTN2,_______,_______,_______,_______,_______,START,  KC_UP,  END,    KC__VOLUP,_______,
+  //   _______,_______,KC_MS_L,KC_MS_D,KC_MS_R,_______,_______,_______,_______,_______,KC_LEFT,KC_DOWN,KC_RGHT,TD_IOS, _______,
+  //   _______,Ctrl,   Alt,    Cmd,    Shift,  _______,_______,_______,_______,_______,SHT_SCR,SHT_ARE,SHT_OPT,KC__VOLDOWN,_______,
+  //   _______,_______,_______,L_COL,  _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
+  // ),
   [_MOVE_LEFT] = LAYOUT_ortho_5x15(
     _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
     _______,_______,START,  KC_UP,  END    ,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
     _______,_______,KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
     _______,_______,SHT_SCR,SHT_ARE,SHT_OPT,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
+    _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
+  ),
+  [_UNICODE] = LAYOUT_ortho_5x15(
+    _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
+    _______,UCX_AU, _______,UCX_EU, _______,_______,_______,_______,_______,UCX_NU, UCX_UU, UCX_IU, UCX_OU, _______,_______,
+    _______,UCX_A,  _______,UCX_E,  _______,_______,_______,_______,_______,UCX_N,  UCX_U,  UCX_I,  UCX_O,  _______,_______,
+    _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
     _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
   ),
   [_COLEMAK] = LAYOUT_ortho_5x15(
@@ -49,4 +63,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   _______,_______,_______,KC_K,   KC_M,   _______,_______,_______,_______,
     _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______
   ),
+};
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case TD_ESC:
+    case CTL_A:
+    case SPC_3:
+      return TAPPING_TERM + 100;
+    case SHT_J:
+      return TAPPING_TERM - 100;
+    default:
+      return TAPPING_TERM;
+  }
+}
+
+// Combos
+enum combos {
+  AS_ESC,
+  JK_TAB
+};
+
+const uint16_t PROGMEM as_combo[] = {KC_A, KC_S, COMBO_END};
+const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+  [AS_ESC] = COMBO(as_combo, KC_ESC),
+  [JK_TAB] = COMBO(jk_combo, KC_TAB)
 };

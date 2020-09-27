@@ -11,6 +11,15 @@ I'm interested in minimal layouts, ergonomics, and reducing hand gymnastics. So 
 
 ## Changelog
 
+### 2020-09-27
+
+- Added a few shortcuts for daily tools
+
+### 2020-09-26
+
+- Tweaking tapping term values per key
+- Added Unicode layer for accented keys and other stuff
+
 ### 2020-09-09
 - Enable dynamic macros, to record login information
 - Added `e` on left thumb (on a mod tap with the Number layer). I've removed the form the top layer, otherwise I'll never get used to it...

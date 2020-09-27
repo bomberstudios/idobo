@@ -27,4 +27,13 @@
 // Adding LT to the backspace key results in half the deletes I do failing because I don't release it fast enough. This should fix it...
 //#define RETRO_TAPPING
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 250
+
+// Apparently I don't release the A key as fast as other keys, so I'll need to tweak the tapping term for pinkies
+#define TAPPING_TERM_PER_KEY
+
+
+// Combos
+#define COMBO_COUNT 2
+
+#define UNICODE_SELECTED_MODES UC_MAC

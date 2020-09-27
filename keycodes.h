@@ -4,12 +4,14 @@
 #define _SYMBOL    3
 #define _MOVE      4
 #define _MOVE_LEFT 5
+#define _UNICODE 6
 
 // Layers
 #define L_COL TG(_COLEMAK)
 #define L_NUM MO(_NUMBER)
-#define L_SYM LT(_SYMBOL,KC_ENT)
+#define L_SYM MO(_SYMBOL)
 #define L_MOM MO(_MOVE)
+#define L_UC MO(_UNICODE)
 
 // macOS Shortcuts
 #define COPY  LWIN(KC_C)
@@ -19,6 +21,20 @@
 #define SHT_OPT LWIN(LSFT(KC_5))
 #define START LWIN(KC_LEFT)
 #define END LWIN(KC_RGHT)
+
+// TextMate
+#define LINEUP  LWIN(LCTL(KC_UP))
+#define LINEDWN LWIN(LCTL(KC_DOWN))
+#define LINEDUP LSFT(LCTL(KC_D))
+#define LINEDEL LSFT(LCTL(KC_K))
+
+// Sketch
+#define RUNSCRIPT LSFT(LCTL(KC_K))
+#define RUNAGAIN  LSFT(LCTL(KC_R))
+#define ZOOM_IN   LWIN(KC_PLUS)
+#define ZOOM_OUT  LWIN(KC_MINUS)
+#define ZENMODE   LWIN(KC_DOT)
+
 
 // Nice names
 #define Ctrl KC_LCTL
@@ -67,3 +83,18 @@
 
 // FN_MO13 - trilayer, layer 1 (3 when held with FN_MO23)
 // FN_MO23 - trilayer, layer 2 (3 when held with FN_MO13)
+
+// Spanish Unicode
+#define UCX_N UC(0xF1) // ñ
+#define UCX_NU UC(0xD1) // Ñ
+
+#define UCX_A UC(0xE1) // á
+#define UCX_E UC(0xE9) // é
+#define UCX_I UC(0xED) // í
+#define UCX_O UC(0xF3) // ó
+#define UCX_U UC(0xFA) // ú
+#define UCX_AU UC(0xC1) // Á
+#define UCX_EU UC(0xC9) // É
+#define UCX_IU UC(0xCD) // Í
+#define UCX_OU UC(0xD3) // Ó
+#define UCX_UU UC(0xDA) // Ú
